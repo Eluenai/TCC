@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/adminx.css" media="screen" />
 
+    
     <!--
       # Optional Resources
       Feel free to delete these if you don't need them in your project
