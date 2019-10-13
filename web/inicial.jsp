@@ -20,7 +20,7 @@
           Gostaria de entrar como:
         </p>-->
 
-        <a href="../admin/login/login.jsp" class="btn btn-primary">Entregador</a>
+        <a href="admin/login/login.jsp" class="btn btn-primary">Entregador</a>
         <a href="#" class="btn btn-light">Cliente</a>
       </div>
     </div>

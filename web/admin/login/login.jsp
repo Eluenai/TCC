@@ -2,123 +2,66 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Administrador - Login
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <!-- Nucleo Icons -->
-  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
-  <!-- CSS Files -->
-  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="../assets/demo/demo.css" rel="stylesheet" />
-</head>
+<html lang="en">
+  <head>
+    <title>AdminX - Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" type="text/css" href="/ProjetoDois/css/adminx.css" media="screen" />
+  </head>
+  <body>
+     
 
-<body class=" ">
-      <div class="content">
-        <div class="row">
-          <div class="col-md-4">
-          </div>
-          <div class="col-md-4">
-            <div class="card  card-user">
-              <div class="card-body ">
-                <p class="card-text">
-                  <div class="author">
-                    <div class="block block-one"></div>
-                    <div class="block block-two"></div>
-                    <div class="block block-three"></div>
-                    <div class="block block-four"></div>
-                    <a href="#">
-                      <img class="avatar" src="../assets/img/logo.jpg" alt="...">
-                      <h5 class="title">Logando</h5>
-                    </a>
-                    <p class="description">
-                      Sistema Administrativo da Livraria
-                    </p>
-                  </div>
-                </p>
-                <p class="card-description">
-                <form action="../login/LoginWS" method="POST">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>E-mail</label>
-                          <input type="text" class="form-control" name="txtEmail" placeholder="Email">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>Senha</label>
-                          <input type="password" class="form-control" name="txtSenha" placeholder="Senha">
-                        </div>
-                      </div>
-                    </div>
-                  
-                    <button type="submit" class="btn btn-fill btn-primary">Entrar</button>
-                  
-                  </form>
-                <c:if test="${not empty msg}">
-                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
-                        <strong>ERRO:</strong> ${msg}
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <i class="tim-icons icon-simple-remove"></i>
-                        </button>
-                    </div>
-                </c:if>
-                
-                </p>
+    <div class="adminx-container d-flex justify-content-center align-items-center">
+      <div class="page-login">
+        <div class="text-center">
+          <a class="navbar-brand mb-4 h1" href="login.jsp">
+            <img src="../demo/img/logo.png" class="navbar-brand-image d-inline-block align-top mr-2" alt="">
+            AdminX
+          </a>
+        </div>
+
+        <div class="card mb-0">
+          
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
               </div>
-              <div class="card-footer ">
-                <div class="button-container">
-                  <button href="#" class="btn btn-icon btn-round btn-facebook">
-                    <i class="fab fa-facebook"></i>
-                  </button>
-                  <button href="#" class="btn btn-icon btn-round btn-twitter">
-                    <i class="fab fa-twitter"></i>
-                  </button>
-                  <button href="#" class="btn btn-icon btn-round btn-google">
-                    <i class="fab fa-google-plus"></i>
-                  </button>
+              <div class="form-group">
+                <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Remember me</label>
                 </div>
               </div>
-            </div>
+              <button type="submit" class="btn btn-sm btn-block btn-primary">Sign in</button>
+            </form>
           </div>
-          <div class="col-md-4">
+          <div class="card-footer text-center">
+            <a href="../../admin/entregador/add.jsp"><small>Cadastre-se</small></a>
           </div>
         </div>
       </div>
-      <footer class="footer">
-        <div class="container-fluid">
-         
-        </div>
-      </footer>
-    <!--   Core JS Files   -->
-    <script src="../assets/js/core/jquery.min.js"></script>
-    <script src="../assets/js/core/popper.min.js"></script>
-    <script src="../assets/js/core/bootstrap.min.js"></script>
-    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-    <!--  Google Maps Plugin    -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-    <!-- Chart JS -->
-    <script src="../assets/js/plugins/chartjs.min.js"></script>
-    <!--  Notifications Plugin    -->
-    <script src="../assets/js/plugins/bootstrap-notify.js"></script>
-    <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src="../assets/js/black-dashboard.min.js?v=1.0.0" type="text/javascript"></script>
-    <!-- Black Dashboard DEMO methods, don't include it in your project! -->
-    <script src="../assets/demo/demo.js"></script>
-    <script>
+    </div>
+
+    <!-- If you prefer jQuery these are the required scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="../dist/js/vendor.js"></script>
+    <script src="../dist/js/adminx.js"></script>
+
+    <!-- If you prefer vanilla JS these are the only required scripts -->
+    <!-- script src="../dist/js/vendor.js"></script>
+    <script src="../dist/js/adminx.vanilla.js"></script-->
+  </body>
+</html>
       $(document).ready(function() {
         $().ready(function() {
           $sidebar = $('.sidebar');
